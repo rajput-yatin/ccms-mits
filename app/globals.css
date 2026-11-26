@@ -5,4 +5,201 @@
 body {
   background-color: #f8f9fc;
   color: #0f172a;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ==========================================
+   DARK MODE THEME (Obsidian Navy + Indigo)
+   ========================================== */
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body,
+.dark .bg-\[\#F8F9FC\] {
+  background-color: #0b0f19 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Surfaces & Cards */
+.dark .bg-white,
+.dark .bg-white\/95 {
+  background-color: #131a2a !important;
+}
+
+.dark .bg-slate-50,
+.dark .bg-slate-50\/60,
+.dark .bg-slate-50\/70 {
+  background-color: #1a2336 !important;
+}
+
+.dark .bg-slate-100,
+.dark .bg-slate-200\/70 {
+  background-color: #1e293b !important;
+}
+
+/* Hero Section Gradient */
+.dark section.bg-gradient-to-br {
+  background-image: linear-gradient(
+    135deg,
+    #131936 0%,
+    #0b0f19 55%,
+    #1a1333 100%
+  ) !important;
+}
+
+/* Borders & Dividers */
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #243047 !important;
+}
+
+.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1f2a40 !important;
+}
+
+.dark .ring-slate-200,
+.dark .ring-slate-200\/70 {
+  --tw-ring-color: #29354d !important;
+}
+
+/* Text Hierarchy */
+.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700 {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-400 {
+  color: #64748b !important;
+}
+
+/* Form Controls */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #0f1624 !important;
+  color: #f8fafc !important;
+  border-color: #2c3a54 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Hover States */
+.dark .hover\:bg-slate-50:hover,
+.dark .hover\:bg-slate-50\/70:hover,
+.dark .hover\:bg-slate-100:hover {
+  background-color: #1f2b42 !important;
+}
+
+.dark .hover\:text-slate-900:hover {
+  color: #ffffff !important;
+}
+
+.dark .hover\:border-indigo-200:hover {
+  border-color: rgba(99, 102, 241, 0.5) !important;
+}
+
+/* Tinted Badges & Accents */
+.dark .bg-indigo-50,
+.dark .bg-indigo-50\/70,
+.dark .bg-indigo-100 {
+  background-color: rgba(99, 102, 241, 0.16) !important;
+}
+
+.dark .text-indigo-600 {
+  color: #818cf8 !important;
+}
+
+.dark .text-indigo-700 {
+  color: #a5b4fc !important;
+}
+
+.dark .border-indigo-200,
+.dark .ring-indigo-200 {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  --tw-ring-color: rgba(99, 102, 241, 0.35) !important;
+}
+
+.dark .bg-purple-50,
+.dark .bg-purple-100 {
+  background-color: rgba(168, 85, 247, 0.16) !important;
+}
+
+.dark .text-purple-600,
+.dark .text-purple-700 {
+  color: #d8b4fe !important;
+}
+
+.dark .bg-emerald-50,
+.dark .bg-emerald-100 {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+.dark .text-emerald-600,
+.dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+.dark .ring-emerald-200 {
+  --tw-ring-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+.dark .bg-sky-50 {
+  background-color: rgba(14, 165, 233, 0.15) !important;
+}
+
+.dark .text-sky-700 {
+  color: #7dd3fc !important;
+}
+
+.dark .ring-sky-200 {
+  --tw-ring-color: rgba(14, 165, 233, 0.35) !important;
+}
+
+.dark .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+}
+
+.dark .text-amber-700 {
+  color: #fcd34d !important;
+}
+
+.dark .ring-amber-200 {
+  --tw-ring-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+.dark .bg-rose-50,
+.dark .bg-red-50 {
+  background-color: rgba(244, 63, 94, 0.15) !important;
+}
+
+.dark .text-rose-700,
+.dark .text-red-700 {
+  color: #fda4af !important;
+}
+
+.dark .border-red-200,
+.dark .ring-rose-200 {
+  border-color: rgba(244, 63, 94, 0.35) !important;
+  --tw-ring-color: rgba(244, 63, 94, 0.35) !important;
 }

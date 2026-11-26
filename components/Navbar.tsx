@@ -1,5 +1,6 @@
 'use client';
 
+import ThemeToggle from '@/components/ThemeToggle';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -112,7 +113,9 @@ export default function Navbar() {
         </div>
 
         {/* Right: Role Pill + Auth Controls */}
+        
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           {user ? (
             <>
               <span
