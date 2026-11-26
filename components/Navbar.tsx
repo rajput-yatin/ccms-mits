@@ -1,10 +1,10 @@
 'use client';
 
 import ThemeToggle from '@/components/ThemeToggle';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
-  GraduationCap,
   LogOut,
   LogIn,
   LayoutDashboard,
@@ -56,8 +56,18 @@ export default function Navbar() {
         {/* Left: Logo + Nav Links */}
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm">
-              <GraduationCap className="h-5 w-5" />
+            <div
+              style={{ backgroundColor: '#ffffff' }}
+              className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-slate-200 p-0.5 shadow-sm"
+            >
+              <Image
+                src="/mits-logo.png"
+                alt="MITS-DU Gwalior"
+                width={38}
+                height={38}
+                className="h-full w-full object-contain"
+                priority
+              />
             </div>
             <div className="leading-tight">
               <div className="text-base font-bold tracking-tight text-slate-900">

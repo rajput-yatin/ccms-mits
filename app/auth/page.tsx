@@ -1,8 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { GraduationCap, Loader2, AlertCircle } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { Club, UserRole } from '@/types/database';
 import { useAuth } from '@/context/AuthContext';
@@ -136,15 +136,19 @@ export default function AuthPage() {
     <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
       <div className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="mb-6 text-center">
-          <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-sm">
-            <GraduationCap className="h-6 w-6" />
+         <div
+            style={{ backgroundColor: '#ffffff' }}
+            className="mx-auto mb-3 flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 p-1 shadow-sm"
+          >
+            <Image
+              src="/mits-logo.png"
+              alt="MITS-DU Gwalior"
+              width={56}
+              height={56}
+              className="h-full w-full object-contain"
+              priority
+            />
           </div>
-          <h1 className="text-2xl font-bold text-slate-900">
-            {isSignUp ? 'Create MITS-DU Account' : 'Welcome back to CCMS'}
-          </h1>
-          <p className="mt-1 text-sm text-slate-500">
-            MITS-DU Gwalior College Club Management Portal
-          </p>
         </div>
 
         {/* Toggle Tabs */}
